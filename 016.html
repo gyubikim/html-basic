@@ -16,16 +16,20 @@
       border-collapse: collapse;
     }
 
+    /* style 안에 표 관련 전부 넣어서 각 셀마다 솔리드 블랙 보더를 만든다. 각 셀마다 만들어지므로 선이 하나가 아닌데, 이것들을 collapse로 뭉개서 선으로 표현 */
     th,
     td {
       padding: 5px 10px;
     }
 
+    /* 표에 padding으로 각 셀과 안의 글자와의 여백을 줌. */
 
     tr>td:nth-child(1),
     tr>td:nth-child(2) {
       text-align: center;
     }
+
+
 
     tr>td:nth-child(3),
     tr>td:nth-child(4),
@@ -64,74 +68,78 @@
   </style>
 
   <table>
-    <tr>
-      <th rowspan="2">출발역</th>
-      <th rowspan="2">도착역</th>
-      <th colspan="2">현재운임</th>
-      <th colspan="2">2022년 중앙선 전 구간 개통 시<br>청량리~서원주 구간 '준고속 서비스'</th>
-    </tr>
-    <tr>
-      <th>일반실(A)</th>
-      <th>우등실</th>
-      <th>일반실(B)</th>
-      <th>우등실</th>
-    </tr>
-    <tr>
-      <td>청량리</td>
-      <td>원주</td>
-      <td>10,100</td>
-      <td>13,100</td>
-      <td>13,300</td>
-      <td>16,300</td>
-    </tr>
-    <tr>
-      <td>양평</td>
-      <td>원주</td>
-      <td>8,400</td>
-      <td>11,400</td>
-      <td>8,400</td>
-      <td>11,400</td>
-    </tr>
-    <tr>
-      <td>원주</td>
-      <td>제천</td>
-      <td>8,400</td>
-      <td>11,400</td>
-      <td>8,400</td>
-      <td>11,400</td>
-    </tr>
-    <tr>
-      <td>원주</td>
-      <td>단양</td>
-      <td>8,400</td>
-      <td>11,400</td>
-      <td>8,400</td>
-      <td>11,400</td>
-    </tr>
-    <tr>
-      <td>원주</td>
-      <td>풍기</td>
-      <td>10,400</td>
-      <td>13,400</td>
-      <td>10,400</td>
-      <td>13,400</td>
-    </tr>
-    <tr>
-      <td>원주</td>
-      <td>영주</td>
-      <td>11,700</td>
-      <td>14,700</td>
-      <td>11,700</td>
-      <td>14,700</td>
-    </tr>
-    <tr>
-      <td>원주</td>
-      <td>안동</td>
-      <td>14,900</td>
-      <td>17,900</td>
-      <td>14,900</td>
-      <td>17,900</td>
-    </tr>
+    <thead>
+      <tr>
+        <th rowspan="2">출발역</th>
+        <th rowspan="2">도착역</th>
+        <th colspan="2">현재운임</th>
+        <th colspan="2">2022년 중앙선 전 구간 개통 시<br>청량리~서원주 구간 '준고속 서비스'</th>
+      </tr>
+      <tr>
+        <th>일반실(A)</th>
+        <th>우등실</th>
+        <th>일반실(B)</th>
+        <th>우등실</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>청량리</td>
+        <td>원주</td>
+        <td>10,100</td>
+        <td>13,100</td>
+        <td>13,300</td>
+        <td>16,300</td>
+      </tr>
+      <tr>
+        <td>양평</td>
+        <td>원주</td>
+        <td>8,400</td>
+        <td>11,400</td>
+        <td>8,400</td>
+        <td>11,400</td>
+      </tr>
+      <tr>
+        <td>원주</td>
+        <td>제천</td>
+        <td>8,400</td>
+        <td>11,400</td>
+        <td>8,400</td>
+        <td>11,400</td>
+      </tr>
+      <tr>
+        <td>원주</td>
+        <td>단양</td>
+        <td>8,400</td>
+        <td>11,400</td>
+        <td>8,400</td>
+        <td>11,400</td>
+      </tr>
+      <tr>
+        <td>원주</td>
+        <td>풍기</td>
+        <td>10,400</td>
+        <td>13,400</td>
+        <td>10,400</td>
+        <td>13,400</td>
+      </tr>
+      <tr>
+        <td>원주</td>
+        <td>영주</td>
+        <td>11,700</td>
+        <td>14,700</td>
+        <td>11,700</td>
+        <td>14,700</td>
+      </tr>
+      <tr>
+        <td>원주</td>
+        <td>안동</td>
+        <td>14,900</td>
+        <td>17,900</td>
+        <td>14,900</td>
+        <td>17,900</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 
