@@ -1,0 +1,183 @@
+<style> </style>
+
+<body>
+  <form action="">
+    <input type="text" name="" id="" required maxlength="6">
+    <!-- 텍스트를 받을 수 있는 인풋 필드 -->
+    <!-- required는 필수입력 -->
+    <!-- maxlength는 최대입력숫자 -->
+
+    <button type="button">조회</button>
+    <input type="button" value="저장>" </body> <!-- 동작 동일 -->
+
+    <input type="checkbox" name="program_lang" id="chk_html">
+    <!-- 체크박스가 쓰임. 여러개의 항목 중에서 다중선택 할 떄에 사용 -->
+    <!-- name에는 같은 질문에 대한 1개 혹은 다중대답. -->
+    <!-- 리드온리, 디스에이블드 등 속성이 있다. -->
+
+    <label for="chk_html">HTML</label>
+    <!-- 체크박스에 라벨을 붙임 -->
+    <!-- 라벨만 눌러도 체크박스가 눌리게 하는 방법: 아이디에 원하는 아이디를 쓰고
+    그 아이디를 라벨 for에 넣으면 됌 -->
+
+    <label><input type="checkbox" name="" id=""> 자바스크립트</label>
+    <!-- 아이디 만드려고 골머리 쌀 필요 없다. 위랑 똑같이 동작하는데 한줄코딩 -->
+
+    <div>
+      <input type="color" name="" id="">
+      <!-- 누르면 색상을 선택할 수 있는 팔레트가 뜨고, RGB값을 출력 -->
+    </div>
+
+    <div>
+      <input type="date" name="" id="">
+      <!-- 날짜선택  -->
+    </div>
+
+    <div>
+      <input type="datetime-local" name="" id="">
+      <!-- 날짜선택+시간선택 -->
+    </div>
+
+    <div>
+      <input type="email" name="" id="">
+      <!-- form 걸면 이메일 형식과 맞는지 읽음 -->
+    </div>
+
+    <div>
+      <input type="file" name="" id="" multiple>
+      <!-- 파일 선택하여 업로드 -->
+      <!-- mutiple을 넣으면 다중선택 -->
+    </div>
+
+    <div>
+      <input type="image"
+        src="https://blogpfthumb-phinf.pstatic.net/MjAyMTA2MDZfMTgz/MDAxNjIyOTA1NDkyNzA0.-bVTwXqm2VdDggLiBavwxI7N0gyyuH52j9RjwzIxsHYg.w2vD1EawaeTUpy27BB89W4AgFIgqA10WAvbyqqtpHi4g.PNG.mjuseoyoung/profileImage.png?type=w161"
+        alt="">
+      <!-- 이미지 url 넣을 수 있음. src에 이미지 주소 넣으면 이미지 출력. -->
+      <!-- 인풋타입 이미지는 내부적으로 이미지이자 버튼이다. 어떤 경우에는
+      이미지가 이미지이자 동작이 될 수 있게끔 버튼기능도 있어야 한다. 횡단보도
+    를 찍어 보세요 할 때 등 -->
+    </div>
+
+    <div>
+      <input type="month" name="" id="">
+      <!-- 년, 월 받음 -->
+    </div>
+
+    <div>
+      <input type="number" name="" id="">
+      <!-- 숫자만 입력할 수 있는 필드 -->
+    </div>
+
+    <div>
+      <input type="password" name="" id="">
+      <!-- 비밀번호입력창 -->
+    </div>
+
+    <div>
+      <label><input type="radio" name="r" id=""> 자바스크립트</label>
+      <label><input type="radio" name="r" id="" checked> 가바스크립트</label>
+      <label><input type="radio" name="r" id=""> 나바스크립트</label>
+      <!-- name이 같은 애들 중에서 하나를 선택하게끔 만든다 -->
+      <!-- checked 는 디폴트가 체크인걸로 넣는다. 
+        마케팅 수신동의에 넣으면 아주 좋다.^^ -->
+    </div>
+
+    <div>
+      <input type="range" name="" id="" min="30" max="50">
+      <!-- 볼륨조절 같은 바 나옴 -->
+      <!-- 최대최소를 걸 수 있음 -->
+    </div>
+
+    <div>
+      <input type="search" name="" id="">
+      <!-- 쓰는순간 바로 엑스자 생김 -->
+    </div>
+
+    <div>
+      <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+      <!-- 패턴이란 건 정규식. -->
+      <!-- 저 정규식은 폰번호 정규식이다.0에서 9까지만 입력가능, 3자리. - 0에서 9까지만 입력가능, 4자리. - 
+      0에서 9까지만 입력가능, 4자리. -->
+      <!-- 위 형식으로 해야 섭밋이 됌. -->
+    </div>
+
+    <div>
+      <input type="time" name="" id="">
+      <!-- 오전오후시간 -->
+    </div>
+
+    <div>
+      <input type="url" name="" id="">
+      <!-- url만 받을 수 있게 -->
+    </div>
+
+    <div>
+      <input type="week" name="" id="">
+      <!-- 몇주차인지 선택. 회사 내부시스템은 주차별로 많이 되있어서, 쓸 일이 많다.  -->
+    </div>
+
+    <div>
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="한국">한국</option>
+        <option value="미국">미국</option>
+      </select>
+      <!-- 셀렉트박스 - 예시는 국가선택 -->
+      <!-- 다중선택은 멀티플, 저 중에서도 검색창 만들 수 있음 -->
+    </div>
+
+    <div>
+      <input type="hidden" name="" value="A">
+      <!-- 사용자 못보는 거 -->
+    </div>
+
+    <div>
+
+      <!-- 키인하면 사라지고 값이 없으면 나타나는 
+      데이터 값 가이드 placeholder-->
+    </div>
+
+    <div>
+      <textarea name="" id="" cols="30" rows="10"></textarea><br>
+      <textarea name="" id="" style="100%" rows="10"></textarea>
+      <!-- 여러줄입력가능. rows는 입력할 몇줄 공간, 
+        cos: 영문기준 가로입력문자개수. -->
+    </div>
+
+    <fieldset>
+      <legend>개인정보</legend>
+      <label for="fname">이름:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="tel">연락처:</label><br>
+      <input type="tel" id="tel" name="tel"><br><br>
+      <input type="submit" value="저장">
+    </fieldset>
+    <!-- 레전드: 박스이름
+    라벨이름
+     박스
+    저장 -->
+
+    <div>
+      <input list="country">
+      <datalist id="country">
+        <option value="한국">
+        <option value="미국">
+      </datalist>
+    </div>
+
+
+
+
+  </form>
+
+  <!-- 값이 저장되는 게 value라는 속성
+  체크박스도 value라는 속성을 갖고있다.
+체크박스에 value="CSS"라고 넣었다 치자.
+그럼 사용자가 CSS라는 체크박스를 선택했다 하면
+내부적으로는 이 밸류값이 넘어가는 거다.
+사용자 보고 수정불가 readonly 예를 들어 아이디.
+사용자 못보는 거 hidden. -->
+
+  <!-- autofocus 화면에서 사용자가 무조건 키인하고 시작할  -->
+  <!-- autocomplete="on" 검색어 저장 -->
