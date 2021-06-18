@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    열차 시간표
+  </title>
+</head>
+
+<body>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 5px 10px;
+    }
+
+
+    tr>td:nth-child(1),
+    tr>td:nth-child(2) {
+      text-align: center;
+    }
+
+    tr>td:nth-child(3),
+    tr>td:nth-child(4),
+    tr>td:nth-child(5),
+    tr>td:nth-child(6) {
+      text-align: right;
+    }
+
+    tr>td:nth-child(3),
+    tr>td:nth-child(4) {
+      background-color: greenyellow;
+    }
+
+    tr:nth-child(1)>th:nth-child(3) {
+      background-color: greenyellow;
+    }
+
+    tr:nth-child(2)>th:nth-child(1),
+    tr:nth-child(2)>th:nth-child(2) {
+      background-color: greenyellow;
+    }
+
+    tr>td:nth-child(5),
+    tr>td:nth-child(6) {
+      background-color: yellow;
+    }
+
+    tr:nth-child(1)>th:nth-child(4) {
+      background-color: yellow;
+    }
+
+    tr:nth-child(2)>th:nth-child(3),
+    tr:nth-child(2)>th:nth-child(4) {
+      background-color: yellow;
+    }
+  </style>
+
+  <table>
+    <tr>
+      <th rowspan="2">출발역</th>
+      <th rowspan="2">도착역</th>
+      <th colspan="2">현재운임</th>
+      <th colspan="2">2022년 중앙선 전 구간 개통 시<br>청량리~서원주 구간 '준고속 서비스'</th>
+    </tr>
+    <tr>
+      <th>일반실(A)</th>
+      <th>우등실</th>
+      <th>일반실(B)</th>
+      <th>우등실</th>
+    </tr>
+    <tr>
+      <td>청량리</td>
+      <td>원주</td>
+      <td>10,100</td>
+      <td>13,100</td>
+      <td>13,300</td>
+      <td>16,300</td>
+    </tr>
+    <tr>
+      <td>양평</td>
+      <td>원주</td>
+      <td>8,400</td>
+      <td>11,400</td>
+      <td>8,400</td>
+      <td>11,400</td>
+    </tr>
+    <tr>
+      <td>원주</td>
+      <td>제천</td>
+      <td>8,400</td>
+      <td>11,400</td>
+      <td>8,400</td>
+      <td>11,400</td>
+    </tr>
+    <tr>
+      <td>원주</td>
+      <td>단양</td>
+      <td>8,400</td>
+      <td>11,400</td>
+      <td>8,400</td>
+      <td>11,400</td>
+    </tr>
+    <tr>
+      <td>원주</td>
+      <td>풍기</td>
+      <td>10,400</td>
+      <td>13,400</td>
+      <td>10,400</td>
+      <td>13,400</td>
+    </tr>
+    <tr>
+      <td>원주</td>
+      <td>영주</td>
+      <td>11,700</td>
+      <td>14,700</td>
+      <td>11,700</td>
+      <td>14,700</td>
+    </tr>
+    <tr>
+      <td>원주</td>
+      <td>안동</td>
+      <td>14,900</td>
+      <td>17,900</td>
+      <td>14,900</td>
+      <td>17,900</td>
+    </tr>
+  </table>
+</body>
+
+</html>
