@@ -1,0 +1,85 @@
+<!-- CSS1.0621.T  -->
+<!-- *는 body안에 모든 스타일을 적용시킨다. -->
+<!-- 캘르스 적용시 점 넣는데 실제로 쓸때는 점 배고 넣어야 함. 클래스는 다중으로 
+넣을 수 있고 공백 하나 주고 또 넣으면 된다. <style>안에 .text-white라고 하고 coler:
+  white 고 body애소 div class=text-white -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> 문서</title>
+  <style>
+    .bg-red {
+      background-color: red;
+    }
+
+    .h-100 {
+      height: 100px;
+    }
+
+    .text-white {
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="bg-red h-100 text-white">class 선택자 적용
+
+  </div>
+</body>
+
+</html>
+
+<!-- 정의해놓고 짧게 쓰기 위함인듯 -->
+<!-- 요소 id는 유일한 이름이어야 함
+스타일에서 아이디 선택자는 아이디에 들어간 값으로
+디자인 적용. 클래스는 점이었는데, 아이디는 #이 붙음.
+즉 . 붙은건 클래스적용, #붙은건 아이디적용
+한군데 적용할때에는 아이디, 여러군데 적용은 클래스 -->
+
+<section>
+  section ul {
+
+  }
+</section>
+<!-- 하위 선택자 section ul:섹션이란 태그를 먼저 찾고 그 섹션이란 태그 안에 있는
+모든 ul이란 태그를 찾아라, 거기다 적용해라 라는 거 -->
+
+<!-- 자식 선택자: section>ul:섹션이란 태그 안에 바로 나오는
+ul을 찾아라. 즉, 가장 밖에 있는 바로 자식 ul태그만 찾아
+적용하라.  -->
+
+<!-- 인접 형제 선택자 h1+ul: 이 때 먼저 h1을 찾고 그 바로 옆의 ul
+에 스타일 적용.   -->
+
+<!-- 형제 선택자 h1~ul: h1요소 옆의 모든 ul요소에 스타일 적용 -->
+
+<!-- 9page -->
+<!-- 속성 선택자 -->
+<!-- type이라는 것도 하나의 속성임. 예를 들어, 
+type이라는 속성에="text"라는 속성값이 들어간건데
+이 type="text"라는 속성and 속성값인 게 나오면 내가 만든 스타일 적용
+또 체크박스(속성)중에 체크된것(속성값)이라서 체크박스 중에
+체크된 것만 잡을 수 있음-->
+
+<!-- 10page -->
+<!-- 가상 클래스 선택자 -->
+<style>
+  a:hover {
+    color: red;
+  }
+
+  < !-- a에 마우스가 올라갔을때(hover) 색깔을 빨간색으로 바꿈 -->a:active {
+    color: blue;
+    /* a 클릭할 때 색깔을 파란색으로 바꿈 */
+  }
+
+  ul>li:first-child
+  /* ul 밑에 첫 번째 li */
+  ul>li:last-child
+  /* ul 밑에 마지막 li */
+  ul>li:nth-child(n)
+  /* ul 밑에 n번째 li */
+</style>
